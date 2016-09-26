@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>English Version</title>
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+	<div class="home-options">
+		<div class="info-options">
+			<h1>This's a English Version Page</h1>
+			<div class="languages">
+				<a href="#" id="remove">Remove lacalStorage and return to home</a>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		var removeBtn = document.querySelector("#remove");
+
+		removeBtn.onclick = remove;
+
+		function remove(){
+			localStorage.removeItem("language");
+
+			window.location.href = "index.html";
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>English Version</title>
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+	<div class="home-options">
+		<div class="info-options">
+			<h1>Esto es una version en español de la página</h1>
+			<div class="languages">
+				<a href="#" id="remove">Eliminar localStorage y volver a inicio</a>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		var elimina = document.querySelector("#remove");
+
+		elimina.onclick = remove;
+
+		function remove(){
+			localStorage.removeItem("language");
+
+			window.location.href = "index.html";
+		}
+	</script>
+</body>
+</html>
